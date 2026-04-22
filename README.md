@@ -1,5 +1,5 @@
 # EXPERIMENT--01-ALP-FOR-8086
-## Name : HARSHAt G
+## Name : HARSHAT G
 ## Roll no : 212224040106
 ## Date of experiment : 22-04-2026
 
@@ -80,10 +80,12 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Addition  of 8 bit ALP 
 ```
+org 100h
 MOV AX,132H;
 MOV BX,362H;
 ADD AX,BX   
 MOV [5000H],AX;
+ret
 ```
 ## Output  
 
@@ -91,10 +93,12 @@ MOV [5000H],AX;
  
 ## Subtraction   of 8 bit numbers  ALP 
 ```
+org 100h
 MOV AX, 132H;
 MOV BX, 362H;
 SUB AX, BX     
 MOV [5002H],AX;
+ret
 ```
 ## Output
 
@@ -102,10 +106,12 @@ MOV [5002H],AX;
 
 ## Multiplication alp 
 ```
+org 100h
 MOV AX, 75H;
 MOV BX, 32H;
 MUL BX      
 MOV [5004H],AX;
+ret
 ```
  ## Output  
 
@@ -113,10 +119,12 @@ MOV [5004H],AX;
 
 ## Division alp 
 ```
+org 100h
 MOV AX, 68H;
 MOV BX, 18H;
 DIV BX       
 MOV [5006H],AX;
+ret
 ```
 ## Output  
 
@@ -125,10 +133,12 @@ MOV [5006H],AX;
 ## Programs for logical  operations
 ## AND 
 ```
+org 100h
 MOV AX,6132H;
 MOV BX,8362H;
 AND AX,BX   
 MOV [5000H],AX;
+ret
 ```
 ## OUTPUT:
 
@@ -136,10 +146,12 @@ MOV [5000H],AX;
 
 ## OR
 ```
+org 100h
 MOV AX, 4132H;
 MOV BX, 2362H;
 OR AX, BX     
 MOV [5002H],AX;
+ret
 ```
 ## Output
 
@@ -147,52 +159,62 @@ MOV [5002H],AX;
 
 ## NAND:
 ```
+org 100h
 MOV AX, 8475H;
 MOV BX, 1232H;
 AND AX,BX
 NOT AX      
 MOV [5004H],AX;
+ret
 ```
 ## Output
 <img width="1870" height="1085" alt="image" src="https://github.com/user-attachments/assets/5576eef8-73dc-4450-bd2c-7b647196189e" />
 
 ## NOR
 ```
+org 100h
 MOV AX, 4132H;
 MOV BX, 2362H;
 OR AX, BX  
 NOT AX   
-MOV [5006H],AX;  
+MOV [5006H],AX;
+ret 
 ```
 ## Output
 <img width="1836" height="1016" alt="image" src="https://github.com/user-attachments/assets/271d02bc-d174-4831-b8a4-2ba356f7a942" />
 
 ## NOT
 ```
+org 100h
 MOV AX, 5566H;
 NOT AX        
 MOV [5010H],AX;
+ret
 ```
 ## OUTPUT
 <img width="1819" height="1027" alt="image" src="https://github.com/user-attachments/assets/8fca4b8e-0802-481e-ba13-08bd59b4129c" />
 
 ## XOR
 ```
+org 100h
 MOV AX, 2233H;
 MOV BX, 3344H;
 XOR AX,BX
 MOV [5012H],AX;
+ret
 ```
 ## Output
 <img width="1863" height="1065" alt="image" src="https://github.com/user-attachments/assets/738a0cb5-30e6-4065-b9f8-6ff3de698eb5" />
 
 ## XNOR
 ```
+org 100h
 MOV AX,3344H;
 MOV BX,4455H;
 XOR AX,BX
 NOT AX
 MOV [5014H],AX;
+ret
 ```
 ## Output
 <img width="1832" height="1098" alt="image" src="https://github.com/user-attachments/assets/5f0f3558-c9f0-491d-81a6-a1b8adbfac23" />
